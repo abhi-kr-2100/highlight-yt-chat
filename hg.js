@@ -18,5 +18,5 @@ function highlight(names, color) {
 }
 
 function hg(names) {
-    setInterval(() => highlight(names, highlightColor), waitTime);
+    setInterval(highlight, waitTime, names, highlightColor);
 }
