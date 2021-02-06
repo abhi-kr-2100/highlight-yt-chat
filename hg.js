@@ -1,6 +1,6 @@
 const DEBUG = false;
 
-const authorNameSelector = "#author-id";
+const authorNameSelector = "#author-name";
 const waitTime = 2000;
 const highlightColor = 'red';
 
