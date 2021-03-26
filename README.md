@@ -12,4 +12,4 @@ Once done, you need to copy-and-paste the code from the included `hg.js` file in
 
 Now, you're ready to start highlighting user's messages. To highlight all messages from `["ABC", "Bot Dude", "Flower Girl", "XYZ"]`, type in the following and press Enter:
 
-`hg(["ABC", "Bot Dude", "Flower Girl", "XYZ"]);`
+`hg(["ABC", "Bot", "Flower Girl", "XYZ"]);`
