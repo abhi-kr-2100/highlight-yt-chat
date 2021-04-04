@@ -1,6 +1,6 @@
 const authorNameSelector = "#author-name";
 const waitTime = 2000;
-const highlightColor = 'red';
+const defaultHighlightColor = 'red';
 
 
 function highlight(names, color) {
@@ -17,6 +17,6 @@ function highlight(names, color) {
 }
 
 
-function keep_an_eye_on(names) {
-    setInterval(highlight, waitTime, names, highlightColor);
+function keep_an_eye_on(names, color = defaultHighlightColor) {
+    setInterval(highlight, waitTime, names, color);
 }
