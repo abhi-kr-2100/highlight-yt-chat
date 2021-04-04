@@ -2,6 +2,7 @@ const authorNameSelector = "#author-name";
 const waitTime = 2000;
 const highlightColor = 'red';
 
+
 function highlight(names, color) {
     let authors = document.querySelectorAll(authorNameSelector);
 
@@ -15,6 +16,7 @@ function highlight(names, color) {
     }
 }
 
-function hg(names) {
+
+function keep_an_eye_on(names) {
     setInterval(highlight, waitTime, names, highlightColor);
 }
