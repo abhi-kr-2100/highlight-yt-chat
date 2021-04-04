@@ -1,22 +1,22 @@
-const authorNameSelector = "#author-name";
+const nameSelector = "#author-name";
 const waitTime = 2000;
-const defaultHighlightColor = 'red';
+const defaultColor = 'red';
 
-keeping_an_eye_on = []
+let targets = []
 
 function highlight(name, color) {
-    let authors = document.querySelectorAll(authorNameSelector);
+    let users = document.querySelectorAll(nameSelector);
 
-    for (let i = 0; i < authors.length; ++i)
-        if (authors[i].textContent === name)
-            authors[i].style.backgroundColor = color;
+    for (let i = 0; i < users.length; ++i)
+        if (users[i].textContent === name)
+            users[i].style.backgroundColor = color;
 }
 
-function keep_an_eye_on(name, color = defaultHighlightColor) {
-    keeping_an_eye_on[name] = setInterval(highlight, waitTime, name, color);
+function eye(name, color = defaultColor) {
+    targets[name] = setInterval(highlight, waitTime, name, color);
 }
 
 function clear(name) {
-    if (name in keeping_an_eye_on)
-        clearInterval(keeping_an_eye_on[name]);
+    if (name in targets)
+        clearInterval(targets[name]);
 }
