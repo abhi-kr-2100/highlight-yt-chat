@@ -20,3 +20,10 @@ function highlight(name, color) {
 function keep_an_eye_on(name, color = defaultHighlightColor) {
     keeping_an_eye_on[name] = setInterval(highlight, waitTime, name, color);
 }
+
+
+function clear(name) {
+    if (name in keeping_an_eye_on) {
+        clearInterval(keeping_an_eye_on[name]);
+    }
+}
