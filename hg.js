@@ -3,20 +3,20 @@ const waitTime = 2000;
 const defaultHighlightColor = 'red';
 
 
-function highlight(names, color) {
+keeping_an_eye_on = []
+
+
+function highlight(name, color) {
     let authors = document.querySelectorAll(authorNameSelector);
 
     for (let i = 0; i < authors.length; ++i) {
-        for (let j = 0; j < names.length; ++j) {
-
-            if (authors[i].textContent === names[j]) {
-                authors[i].style.backgroundColor = color;
-            }
+        if (authors[i].textContent === name) {
+            authors[i].style.backgroundColor = color;
         }
     }
 }
 
 
-function keep_an_eye_on(names, color = defaultHighlightColor) {
-    setInterval(highlight, waitTime, names, color);
+function keep_an_eye_on(name, color = defaultHighlightColor) {
+    keeping_an_eye_on[name] = setInterval(highlight, waitTime, name, color);
 }
