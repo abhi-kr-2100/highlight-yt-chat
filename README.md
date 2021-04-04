@@ -10,6 +10,6 @@ Go to a YouTube livestream or a past stream where the chat is enabled. Wait for 
 
 Once done, you need to copy-and-paste the code from the included `hg.js` file into the same console window.
 
-Now, you're ready to start highlighting user's messages. To highlight all messages from `["ABC", "Bot Dude", "Flower Girl", "XYZ"]`, type in the following and press Enter:
+Now, you're ready to start highlighting user's messages. To highlight all messages from `["ABC", "Bot", "Flower", "XYZ"]`, type in the following and press Enter:
 
 `hg(["ABC", "Bot", "Flower", "XYZ"]);`
