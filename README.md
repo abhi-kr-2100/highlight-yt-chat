@@ -19,4 +19,4 @@ into the same console window.
 Now, you're ready to start highlighting user's messages. To highlight all
 messages from `"ABC"`, type in the following and press Enter:
 
-`keep_an_eye_on("ABC");`
+`eye("ABC");`
